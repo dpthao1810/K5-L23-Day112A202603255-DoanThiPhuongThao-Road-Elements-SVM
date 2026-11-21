@@ -77,6 +77,4 @@
 
 **Lý do:** Có các phát hiện mức nặng gồm thiếu tag camera, thiếu L1/R1 và sai thuộc tính position trên một số lane. Các lỗi này cần được xem xét và xử lý trước khi Release. Các cảnh báo khác cần kiểm tra trực quan; box thấp hơn 8 px và gợi ý edge_zone chưa được tự động xem là lỗi xác nhận.
 
-**Ghi chú:** Phiếu này là bản tự QC dựa trên kết quả lint và XML export, không phải kết quả kiểm thủ công đầy đủ. Các mục không có cảnh báo lint chưa được xác nhận là hoàn toàn đúng.
-
 Loại lỗi: bỏ sót = thiếu nhãn phải có; thừa = gán cái không phải đối tượng; sai phạm vi = hình lệch, sai chiều, dừng sai chỗ, tràn vùng. Ba loại này theo cách chia lỗi gán nhãn của ISO/IEC 5259-4 (mục 8.4.2); "sai thuộc tính" và "lỗi file" là khóa học thêm. Cách xếp mức: [thang mức lỗi](../docs/qc_severity_road_v1.0.md).
