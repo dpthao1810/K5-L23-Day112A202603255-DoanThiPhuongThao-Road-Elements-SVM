@@ -67,14 +67,12 @@
 
 ## Quyết định
 
-- **Lỗi nặng:** 12 phát hiện lint (1 QC1-01 + 8 QC1-02 + 3 QC1-03).
-- **Lỗi chính:** 2 cảnh báo polyline fisheye cần kiểm tra; 7 gợi ý edge_zone chưa xác nhận.
+- **Lỗi nặng:** 12 phát hiện từ lint, gồm 1 QC1-01 (thiếu tag camera), 8 QC1-02 (thiếu L1/R1) và 3 QC1-03 (sai thuộc tính position).
+- **Lỗi chính:** 2 cảnh báo polyline fisheye cần kiểm tra trực quan; 7 gợi ý edge_zone chưa được xác nhận. Các tiêu chí QC1-04 đến QC1-09 chưa có cảnh báo lint, chưa đồng nghĩa đã xác nhận đạt bằng kiểm tra thủ công.
 - **Tỷ lệ lỗi chính:** Chưa tính được vì chưa xác định số nhãn đã kiểm thủ công và chưa xác nhận các lỗi chính.
-- **Lỗi nhẹ:** 8 cảnh báo QC1-12.
-- **Ca chờ lead:** 2 nhóm vấn đề (edge_zone và ảnh chưa có nhãn).
+- **Lỗi nhẹ:** 8 phát hiện QC1-12, gồm 1 trường hợp có điểm lặp liền nhau và 7 ảnh chưa có nhãn.
+- **Ca chờ Lead:** 2 nhóm vấn đề — xác nhận edge_zone và xác minh các ảnh chưa có nhãn có phải ảnh extra hay bị bỏ sót.
 
 **Quyết định: Rework (theo kết quả lint hiện tại).**
 
-**Lý do:** Có các phát hiện mức nặng gồm thiếu tag camera, thiếu L1/R1 và sai thuộc tính position trên một số lane. Các lỗi này cần được xem xét và xử lý trước khi Release. Các cảnh báo khác cần kiểm tra trực quan; box thấp hơn 8 px và gợi ý edge_zone chưa được tự động xem là lỗi xác nhận.
-
-Loại lỗi: bỏ sót = thiếu nhãn phải có; thừa = gán cái không phải đối tượng; sai phạm vi = hình lệch, sai chiều, dừng sai chỗ, tràn vùng. Ba loại này theo cách chia lỗi gán nhãn của ISO/IEC 5259-4 (mục 8.4.2); "sai thuộc tính" và "lỗi file" là khóa học thêm. Cách xếp mức: [thang mức lỗi](../docs/qc_severity_road_v1.0.md).
+**Lý do:** Có các phát hiện mức nặng gồm thiếu tag camera, thiếu L1/R1 và sai thuộc tính position trên một số lane. Các lỗi này cần được xem xét và xử lý trước khi Release. Các cảnh báo khác cần kiểm tra trực quan; box thấp hơn 8 px, gợi ý edge_zone và ảnh chưa có nhãn chưa được tự động xem là lỗi xác nhận khi chưa đối chiếu guideline và dữ liệu thực tế.
