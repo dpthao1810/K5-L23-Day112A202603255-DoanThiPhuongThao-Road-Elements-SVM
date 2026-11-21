@@ -1,7 +1,7 @@
 # Phiếu QC 1 — Road v1.0
 
-Lô được kiểm (học viên):        Người kiểm (học viên):  
-Ngày:                          Phiên bản guideline: Road v1.0  
+Lô được kiểm (học viên): Vũ Đức Quang       Người kiểm (học viên): Doãn Thị Phương Thảo 
+Ngày: 21/11/2026                          Phiên bản guideline: Road v1.0  
 File được kiểm (tên + `revision` trong manifest):  
 Số ảnh kiểm: 6 (+ __ ảnh thêm, ghi riêng)   Số nhãn đã kiểm (shape + tag):  
 
