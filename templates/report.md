@@ -1,8 +1,8 @@
 # Báo cáo cá nhân — Ngày 11
-Họ tên:               Mã học viên:  
+Họ tên: Doãn Thị Phương Thảo              Mã học viên: 2A202603255
 Phiên bản CVAT (Help → About):  
 Guideline: Road v1.0    Lần nộp (`revision` trong manifest):  
-Thời điểm export (ngày giờ trên CVAT):    Số lần nộp lại sau Rework:  
+Thời điểm export (ngày giờ trên CVAT): 11h40   Số lần nộp lại sau Rework:  
 
 ## 1. Kiểm project
 | Mục | Đúng như guideline Road v1.0? | Ghi chú |
