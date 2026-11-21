@@ -1,17 +1,17 @@
 # Báo cáo cá nhân — Ngày 11
 Họ tên: Doãn Thị Phương Thảo              Mã học viên: 2A202603255
 Phiên bản CVAT (Help → About):  
-Guideline: Road v1.0    Lần nộp (`revision` trong manifest):  
-Thời điểm export (ngày giờ trên CVAT): 11h40   Số lần nộp lại sau Rework:  
+Guideline: Road v1.0    Lần nộp (`revision` trong manifest):  1
+Thời điểm export (ngày giờ trên CVAT): 11h40   Số lần nộp lại sau Rework: 0
 
 ## 1. Kiểm project
 | Mục | Đúng như guideline Road v1.0? | Ghi chú |
 | --- | --- | --- |
-| 6 label, đúng kiểu |  |  |
-| Thuộc tính và giá trị |  |  |
-| 4 tag ảnh |  |  |
-Cách kết thúc polyline trên bản CVAT này:  
-Cách đặt tag ảnh trên bản CVAT này:  
+| 6 label, đúng kiểu | Có | Đã tạo đủ label theo guideline |
+| Thuộc tính và giá trị |Có  | Đã thiết lập attribute cho các label |
+| 4 tag ảnh | Có |Đã thiết lập bộ tag cho ảnh  |
+Cách kết thúc polyline trên bản CVAT này:  Click đúp chuột vào điểm cuối để kết thúc polyline.
+Cách đặt tag ảnh trên bản CVAT này: Chọn ảnh trong task, đặt các thuộc tính tag ở cấp ảnh (image-level), không gán vào từng shape. 
 
 ## 2. Số lượng đã gán
 | Task | Ảnh | lane | road_curb | crosswalk | drivable | traffic_light | traffic_sign |
