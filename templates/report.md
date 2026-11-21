@@ -33,10 +33,10 @@ Số lần nộp lại sau Rework: 0
 
 | Ảnh | Nhãn | Phân vân giữa | Đã chọn | Lý do |
 |---|---|---|---|---|
-| | lane | L1 / L2 | | Vị trí vạch so với làn xe |
-| | drivable | direct / alternative | | Xác định vùng xe có thể di chuyển |
-| | traffic_sign | group | | Phân loại theo chức năng biển |
-| | road_curb | curb / ranh giới vùng khác | | Quan sát ranh giới đường thực tế |
+|A03 | lane | L1 / L2 | | Vị trí vạch so với làn xe |
+|A05 | drivable | direct / alternative | | Xác định vùng xe có thể di chuyển |
+|A06 | traffic_sign | group | | Phân loại theo chức năng biển |
+|A11 | road_curb | curb / ranh giới vùng khác | | Quan sát ranh giới đường thực tế |
 
 ## 4. Phiếu QC 1 nhận được
 
@@ -59,15 +59,19 @@ Số lần nộp lại sau Rework: 0
 
 | File | Mở lại được? | Số shape ảnh 1 (job / file) | Số shape ảnh 2 (job / file) | Tag camera có trong XML? |
 |---|---|---|---|---|
-| Front ZIP | Có | A01 | A02 | Chưa kiểm tra |
-| Fisheye ZIP | Có | B01 | B02 | Chưa kiểm tra |
+| Front ZIP | Có | 11 / 11 (A01) | 7 / 7 (A02) | Có |
+| Fisheye ZIP | Có | 3 / 3 (B01) | 11 / 11 (B02) | Có |
 
 ## 6. Ảnh chụp màn hình
 
 - [ ] Tab Labels của project.
+![Project Labels](/01_project_labels.png)
 - [ ] Một ảnh camera trước đã gán đủ (làn, vùng lái, đèn/biển).
+![Front A01](/02_front_A01.png)
 - [ ] Một ảnh fisheye đã gán, phóng to đoạn polyline cong.
+![Fisheye B01](/03_fisheye_B01.png)
 - [ ] Một đoạn XML có `<polyline label="lane">`.
+![XML Polyline](/04_xml_polyline.png)
 
 ## 7. Tự đánh giá
 
